@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001 /* AITextCorrector/App/MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101 /* AITextCorrector/App/MainApp.swift */; };
+		002 /* AITextCorrector/App/AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102 /* AITextCorrector/App/AppDelegate.swift */; };
+		003 /* AITextCorrector/App/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103 /* AITextCorrector/App/AppState.swift */; };
+		004 /* AITextCorrector/App/CorrectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104 /* AITextCorrector/App/CorrectionCoordinator.swift */; };
+		005 /* AITextCorrector/App/MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105 /* AITextCorrector/App/MenuBarController.swift */; };
+		006 /* AITextCorrector/App/OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106 /* AITextCorrector/App/OnboardingView.swift */; };
+		007 /* AITextCorrector/App/ServicesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107 /* AITextCorrector/App/ServicesProvider.swift */; };
+		008 /* AITextCorrector/App/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108 /* AITextCorrector/App/SettingsView.swift */; };
+		009 /* AITextCorrector/Core/ChunkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201 /* AITextCorrector/Core/ChunkingService.swift */; };
+		010 /* AITextCorrector/Core/CorrectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202 /* AITextCorrector/Core/CorrectionService.swift */; };
+		011 /* AITextCorrector/Core/OpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203 /* AITextCorrector/Core/OpenAIClient.swift */; };
+		012 /* AITextCorrector/Core/OutputSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204 /* AITextCorrector/Core/OutputSanitizer.swift */; };
+		013 /* AITextCorrector/Core/PromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205 /* AITextCorrector/Core/PromptBuilder.swift */; };
+		014 /* AITextCorrector/Core/RiskAssessmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206 /* AITextCorrector/Core/RiskAssessmentService.swift */; };
+		015 /* AITextCorrector/Accessibility/AccessibilityPermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301 /* AITextCorrector/Accessibility/AccessibilityPermissionManager.swift */; };
+		016 /* AITextCorrector/Accessibility/FocusedElementReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302 /* AITextCorrector/Accessibility/FocusedElementReader.swift */; };
+		017 /* AITextCorrector/Accessibility/TextReplacementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303 /* AITextCorrector/Accessibility/TextReplacementService.swift */; };
+		018 /* AITextCorrector/Accessibility/TextSelectionCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304 /* AITextCorrector/Accessibility/TextSelectionCaptureService.swift */; };
+		019 /* AITextCorrector/Models/AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401 /* AITextCorrector/Models/AppSettings.swift */; };
+		020 /* AITextCorrector/Models/CorrectionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402 /* AITextCorrector/Models/CorrectionModels.swift */; };
+		021 /* AITextCorrector/Storage/KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501 /* AITextCorrector/Storage/KeychainService.swift */; };
+		022 /* AITextCorrector/Storage/SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502 /* AITextCorrector/Storage/SettingsStore.swift */; };
+		023 /* AITextCorrector/UI/NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601 /* AITextCorrector/UI/NotificationService.swift */; };
+		024 /* AITextCorrector/UI/ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602 /* AITextCorrector/UI/ShortcutManager.swift */; };
+		025 /* AITextCorrector/UI/ShortcutRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603 /* AITextCorrector/UI/ShortcutRecorderView.swift */; };
+		026 /* AITextCorrector/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701 /* AITextCorrector/Assets.xcassets */; };
+		027 /* AITextCorrector/App/TonePaletteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109 /* AITextCorrector/App/TonePaletteController.swift */; };
+		028 /* AITextCorrector/App/TonePaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110 /* AITextCorrector/App/TonePaletteView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100 /* AITextCorrector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = AITextCorrector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		101 /* AITextCorrector/App/MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/MainApp.swift; sourceTree = SOURCE_ROOT; };
+		102 /* AITextCorrector/App/AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		103 /* AITextCorrector/App/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/AppState.swift; sourceTree = SOURCE_ROOT; };
+		104 /* AITextCorrector/App/CorrectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/CorrectionCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		105 /* AITextCorrector/App/MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/MenuBarController.swift; sourceTree = SOURCE_ROOT; };
+		106 /* AITextCorrector/App/OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/OnboardingView.swift; sourceTree = SOURCE_ROOT; };
+		107 /* AITextCorrector/App/ServicesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/ServicesProvider.swift; sourceTree = SOURCE_ROOT; };
+		108 /* AITextCorrector/App/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/SettingsView.swift; sourceTree = SOURCE_ROOT; };
+		109 /* AITextCorrector/App/TonePaletteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/TonePaletteController.swift; sourceTree = SOURCE_ROOT; };
+		110 /* AITextCorrector/App/TonePaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/App/TonePaletteView.swift; sourceTree = SOURCE_ROOT; };
+		201 /* AITextCorrector/Core/ChunkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/ChunkingService.swift; sourceTree = SOURCE_ROOT; };
+		202 /* AITextCorrector/Core/CorrectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/CorrectionService.swift; sourceTree = SOURCE_ROOT; };
+		203 /* AITextCorrector/Core/OpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/OpenAIClient.swift; sourceTree = SOURCE_ROOT; };
+		204 /* AITextCorrector/Core/OutputSanitizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/OutputSanitizer.swift; sourceTree = SOURCE_ROOT; };
+		205 /* AITextCorrector/Core/PromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/PromptBuilder.swift; sourceTree = SOURCE_ROOT; };
+		206 /* AITextCorrector/Core/RiskAssessmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/RiskAssessmentService.swift; sourceTree = SOURCE_ROOT; };
+		301 /* AITextCorrector/Accessibility/AccessibilityPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Accessibility/AccessibilityPermissionManager.swift; sourceTree = SOURCE_ROOT; };
+		302 /* AITextCorrector/Accessibility/FocusedElementReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Accessibility/FocusedElementReader.swift; sourceTree = SOURCE_ROOT; };
+		303 /* AITextCorrector/Accessibility/TextReplacementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Accessibility/TextReplacementService.swift; sourceTree = SOURCE_ROOT; };
+		304 /* AITextCorrector/Accessibility/TextSelectionCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Accessibility/TextSelectionCaptureService.swift; sourceTree = SOURCE_ROOT; };
+		401 /* AITextCorrector/Models/AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Models/AppSettings.swift; sourceTree = SOURCE_ROOT; };
+		402 /* AITextCorrector/Models/CorrectionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Models/CorrectionModels.swift; sourceTree = SOURCE_ROOT; };
+		501 /* AITextCorrector/Storage/KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Storage/KeychainService.swift; sourceTree = SOURCE_ROOT; };
+		502 /* AITextCorrector/Storage/SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Storage/SettingsStore.swift; sourceTree = SOURCE_ROOT; };
+		601 /* AITextCorrector/UI/NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/UI/NotificationService.swift; sourceTree = SOURCE_ROOT; };
+		602 /* AITextCorrector/UI/ShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/UI/ShortcutManager.swift; sourceTree = SOURCE_ROOT; };
+		603 /* AITextCorrector/UI/ShortcutRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/UI/ShortcutRecorderView.swift; sourceTree = SOURCE_ROOT; };
+		700 /* AITextCorrector/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AITextCorrector/Info.plist; sourceTree = SOURCE_ROOT; };
+		701 /* AITextCorrector/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AITextCorrector/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		900 = {
+			isa = PBXGroup;
+			children = (
+				901 /* AITextCorrector */,
+				902 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		901 /* AITextCorrector */ = {
+			isa = PBXGroup;
+			children = (
+				903 /* App */,
+				904 /* Accessibility */,
+				905 /* Core */,
+				906 /* Models */,
+				907 /* Storage */,
+				908 /* UI */,
+				700 /* AITextCorrector/Info.plist */,
+				701 /* AITextCorrector/Assets.xcassets */,
+			);
+			path = AITextCorrector;
+			sourceTree = "<group>";
+		};
+		902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100 /* AITextCorrector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		903 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				102 /* AITextCorrector/App/AppDelegate.swift */,
+				103 /* AITextCorrector/App/AppState.swift */,
+				104 /* AITextCorrector/App/CorrectionCoordinator.swift */,
+				101 /* AITextCorrector/App/MainApp.swift */,
+				105 /* AITextCorrector/App/MenuBarController.swift */,
+				106 /* AITextCorrector/App/OnboardingView.swift */,
+				107 /* AITextCorrector/App/ServicesProvider.swift */,
+				108 /* AITextCorrector/App/SettingsView.swift */,
+				109 /* AITextCorrector/App/TonePaletteController.swift */,
+				110 /* AITextCorrector/App/TonePaletteView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		904 /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				301 /* AITextCorrector/Accessibility/AccessibilityPermissionManager.swift */,
+				302 /* AITextCorrector/Accessibility/FocusedElementReader.swift */,
+				303 /* AITextCorrector/Accessibility/TextReplacementService.swift */,
+				304 /* AITextCorrector/Accessibility/TextSelectionCaptureService.swift */,
+			);
+			path = Accessibility;
+			sourceTree = "<group>";
+		};
+		905 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				201 /* AITextCorrector/Core/ChunkingService.swift */,
+				202 /* AITextCorrector/Core/CorrectionService.swift */,
+				203 /* AITextCorrector/Core/OpenAIClient.swift */,
+				204 /* AITextCorrector/Core/OutputSanitizer.swift */,
+				205 /* AITextCorrector/Core/PromptBuilder.swift */,
+				206 /* AITextCorrector/Core/RiskAssessmentService.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		906 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				401 /* AITextCorrector/Models/AppSettings.swift */,
+				402 /* AITextCorrector/Models/CorrectionModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		907 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				501 /* AITextCorrector/Storage/KeychainService.swift */,
+				502 /* AITextCorrector/Storage/SettingsStore.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		908 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				601 /* AITextCorrector/UI/NotificationService.swift */,
+				602 /* AITextCorrector/UI/ShortcutManager.swift */,
+				603 /* AITextCorrector/UI/ShortcutRecorderView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		950 /* AITextCorrector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 970 /* Build configuration list for PBXNativeTarget "AITextCorrector" */;
+			buildPhases = (
+				951 /* Sources */,
+				800 /* Frameworks */,
+				952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AITextCorrector;
+			productName = AITextCorrector;
+			productReference = 100 /* AITextCorrector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					950 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+				};
+			};
+			buildConfigurationList = 961 /* Build configuration list for PBXProject "AITextCorrector" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 900;
+			productRefGroup = 902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				950 /* AITextCorrector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026 /* AITextCorrector/Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001 /* AITextCorrector/App/MainApp.swift in Sources */,
+				002 /* AITextCorrector/App/AppDelegate.swift in Sources */,
+				003 /* AITextCorrector/App/AppState.swift in Sources */,
+				004 /* AITextCorrector/App/CorrectionCoordinator.swift in Sources */,
+				005 /* AITextCorrector/App/MenuBarController.swift in Sources */,
+				006 /* AITextCorrector/App/OnboardingView.swift in Sources */,
+				007 /* AITextCorrector/App/ServicesProvider.swift in Sources */,
+				008 /* AITextCorrector/App/SettingsView.swift in Sources */,
+				027 /* AITextCorrector/App/TonePaletteController.swift in Sources */,
+				028 /* AITextCorrector/App/TonePaletteView.swift in Sources */,
+				009 /* AITextCorrector/Core/ChunkingService.swift in Sources */,
+				010 /* AITextCorrector/Core/CorrectionService.swift in Sources */,
+				011 /* AITextCorrector/Core/OpenAIClient.swift in Sources */,
+				012 /* AITextCorrector/Core/OutputSanitizer.swift in Sources */,
+				013 /* AITextCorrector/Core/PromptBuilder.swift in Sources */,
+				014 /* AITextCorrector/Core/RiskAssessmentService.swift in Sources */,
+				015 /* AITextCorrector/Accessibility/AccessibilityPermissionManager.swift in Sources */,
+				016 /* AITextCorrector/Accessibility/FocusedElementReader.swift in Sources */,
+				017 /* AITextCorrector/Accessibility/TextReplacementService.swift in Sources */,
+				018 /* AITextCorrector/Accessibility/TextSelectionCaptureService.swift in Sources */,
+				019 /* AITextCorrector/Models/AppSettings.swift in Sources */,
+				020 /* AITextCorrector/Models/CorrectionModels.swift in Sources */,
+				021 /* AITextCorrector/Storage/KeychainService.swift in Sources */,
+				022 /* AITextCorrector/Storage/SettingsStore.swift in Sources */,
+				023 /* AITextCorrector/UI/NotificationService.swift in Sources */,
+				024 /* AITextCorrector/UI/ShortcutManager.swift in Sources */,
+				025 /* AITextCorrector/UI/ShortcutRecorderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AITextCorrector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codex.AITextCorrector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		981 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AITextCorrector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codex.AITextCorrector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+			};
+			name = Debug;
+		};
+		983 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		961 /* Build configuration list for PBXProject "AITextCorrector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982 /* Debug */,
+				983 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		970 /* Build configuration list for PBXNativeTarget "AITextCorrector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				980 /* Debug */,
+				981 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 960 /* Project object */;
+}
