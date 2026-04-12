@@ -153,12 +153,20 @@ final class CorrectionCoordinator {
                     try await notify(message)
                     return
                 } catch {
-                    try await copyAndAttemptPasteFallback(result.correctedText, action: action)
+                    try await copyAndAttemptPasteFallback(
+                        result.correctedText,
+                        originalSelection: selection.text,
+                        action: action
+                    )
                     return
                 }
             }
 
-            try await copyAndAttemptPasteFallback(result.correctedText, action: action)
+            try await copyAndAttemptPasteFallback(
+                result.correctedText,
+                originalSelection: selection.text,
+                action: action
+            )
         } catch {
             appState?.lastErrorMessage = error.localizedDescription
             try? await notify(error.localizedDescription)
@@ -208,11 +216,22 @@ final class CorrectionCoordinator {
         }
     }
 
-    private func copyAndAttemptPasteFallback(_ text: String, action: TextTransformationAction) async throws {
+    private func copyAndAttemptPasteFallback(_ text: String, originalSelection: String, action: TextTransformationAction) async throws {
         try replacementService.copyToClipboard(text)
 
         if settingsStore.settings.replaceAutomaticallyWhenPossible {
             do {
+                if try replacementService.replaceCurrentSelectionIfStillMatching(
+                    originalSelection: originalSelection,
+                    replacementText: text
+                ) {
+                    let replacedMessage = action == .correct
+                        ? "No se pudo reemplazar con el contexto original, pero se reemplazó la selección actual."
+                        : "No se pudo reemplazar con el contexto original, pero se tradujo y reemplazó la selección actual."
+                    try await notify(replacedMessage)
+                    return
+                }
+
                 try await replacementService.pasteFromClipboardIntoFocusedApp()
                 let pastedMessage = action == .correct
                     ? "No se pudo reemplazar directamente, pero el texto corregido se pegó automáticamente."
@@ -220,7 +239,18 @@ final class CorrectionCoordinator {
                 try await notify(pastedMessage)
                 return
             } catch {
-                // Fall through to clipboard-only notification.
+                do {
+                    try replacementService.copyToClipboard(text)
+                    try await Task.sleep(for: .milliseconds(80))
+                    try await replacementService.pasteFromClipboardIntoFocusedApp()
+                    let pastedMessage = action == .correct
+                        ? "No se pudo reemplazar directamente, pero el texto corregido se pegó automáticamente."
+                        : "No se pudo reemplazar directamente, pero la traducción al inglés se pegó automáticamente."
+                    try await notify(pastedMessage)
+                    return
+                } catch {
+                    // Fall through to clipboard-only notification.
+                }
             }
         }
 

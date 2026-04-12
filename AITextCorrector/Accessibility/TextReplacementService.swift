@@ -28,6 +28,8 @@ enum TextReplacementError: LocalizedError {
 
 @MainActor
 final class TextReplacementService {
+    private let focusedElementReader = FocusedElementReader()
+
     func replace(_ correctedText: String, using context: AccessibilitySelectionContext) throws {
         if try replaceUsingSelectedTextAttribute(correctedText, context: context) {
             updateCaret(afterReplacingWith: correctedText, context: context)
@@ -91,8 +93,29 @@ final class TextReplacementService {
         }
     }
 
+    func replaceCurrentSelectionIfStillMatching(originalSelection: String, replacementText: String) throws -> Bool {
+        guard let currentContext = try? focusedElementReader.readSelection() else {
+            return false
+        }
+
+        guard currentContext.selectedText == originalSelection else {
+            return false
+        }
+
+        try replace(replacementText, using: currentContext)
+        return true
+    }
+
     func pasteFromClipboardIntoFocusedApp() async throws {
         try await Task.sleep(for: .milliseconds(120))
+        do {
+            try postPasteEvent(to: .cgSessionEventTap)
+        } catch {
+            try postPasteEvent(to: .cghidEventTap)
+        }
+    }
+
+    private func postPasteEvent(to tap: CGEventTapLocation) throws {
         guard let source = CGEventSource(stateID: .combinedSessionState),
               let keyDown = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_ANSI_V), keyDown: true),
               let keyUp = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_ANSI_V), keyDown: false) else {
@@ -101,8 +124,8 @@ final class TextReplacementService {
 
         keyDown.flags = CGEventFlags.maskCommand
         keyUp.flags = CGEventFlags.maskCommand
-        keyDown.post(tap: CGEventTapLocation.cghidEventTap)
-        keyUp.post(tap: CGEventTapLocation.cghidEventTap)
+        keyDown.post(tap: tap)
+        keyUp.post(tap: tap)
     }
 
     private func copyStringAttribute(_ attribute: CFString, from element: AXUIElement) -> String? {
