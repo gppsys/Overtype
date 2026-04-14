@@ -64,6 +64,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(showSettingsWindow), name: .openSettingsWindow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showOnboardingWindow), name: .openOnboardingWindow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showTonePalette), name: .openTonePalette, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleShortcutRecordingDidBegin), name: .shortcutRecordingDidBegin, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleShortcutRecordingDidEnd), name: .shortcutRecordingDidEnd, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleAppDidBecomeActive), name: NSApplication.didBecomeActiveNotification, object: nil)
 
         bindState()
@@ -132,11 +134,17 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NotificationCenter.default.post(name: .refreshUIState, object: nil)
     }
 
-    private func bindState() {
-        appState.$isProcessing
-            .sink { [weak self] _ in self?.menuBarController?.refreshTitle() }
-            .store(in: &cancellables)
+    @objc private func handleShortcutRecordingDidBegin() {
+        shortcutManager?.unregister()
+        translateShortcutManager?.unregister()
+    }
 
+    @objc private func handleShortcutRecordingDidEnd() {
+        configureHotkey()
+    }
+
+    private func bindState() {
+        // MenuBarController self-observes isProcessing and processingProgress via Combine.
         appState.settingsStore.$settings
             .sink { [weak self] _ in
                 self?.configureHotkey()
@@ -146,26 +154,41 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func configureHotkey() {
+        shortcutManager?.unregister()
+        translateShortcutManager?.unregister()
+
+        let correctionShortcut = appState.settingsStore.settings.globalShortcut
+        let translationShortcut = appState.settingsStore.settings.translateToEnglishShortcut
+
+        appState.shortcutRegistrationMessage = shortcutWarningMessage(for: correctionShortcut)
+        appState.translateShortcutRegistrationMessage = shortcutWarningMessage(for: translationShortcut)
+
         do {
-            try shortcutManager?.register(shortcut: appState.settingsStore.settings.globalShortcut) { [weak self] in
+            try shortcutManager?.register(shortcut: correctionShortcut) { [weak self] in
                 Task { @MainActor in
                     try? await Task.sleep(for: .milliseconds(220))
                     self?.appState.correctionCoordinator.correctSelection()
                 }
             }
-            appState.shortcutRegistrationMessage = shortcutWarningMessage(for: appState.settingsStore.settings.globalShortcut)
         } catch {
             appState.shortcutRegistrationMessage = error.localizedDescription
         }
 
+        guard correctionShortcut != translationShortcut else {
+            appState.translateShortcutRegistrationMessage = mergedShortcutMessage(
+                base: appState.translateShortcutRegistrationMessage,
+                extra: "El shortcut de traducir no puede ser igual al de corregir."
+            )
+            return
+        }
+
         do {
-            try translateShortcutManager?.register(shortcut: appState.settingsStore.settings.translateToEnglishShortcut) { [weak self] in
+            try translateShortcutManager?.register(shortcut: translationShortcut) { [weak self] in
                 Task { @MainActor in
                     try? await Task.sleep(for: .milliseconds(220))
                     self?.appState.correctionCoordinator.translateSelectionToEnglish()
                 }
             }
-            appState.translateShortcutRegistrationMessage = shortcutWarningMessage(for: appState.settingsStore.settings.translateToEnglishShortcut)
         } catch {
             appState.translateShortcutRegistrationMessage = error.localizedDescription
         }
@@ -177,5 +200,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             return "Control + Option suele entrar en conflicto con VoiceOver en macOS. Si falla fuera de la app, prueba añadir Command o usar otra combinación."
         }
         return nil
+    }
+
+    private func mergedShortcutMessage(base: String?, extra: String) -> String {
+        guard let base, !base.isEmpty else { return extra }
+        return "\(base) \(extra)"
     }
 }

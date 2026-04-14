@@ -1,0 +1,23 @@
+{
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/TonePaletteView.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TonePaletteView.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TonePaletteView.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TonePaletteView.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TonePaletteView.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TonePaletteView.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Core/ChunkingService.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ChunkingService.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ChunkingService.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ChunkingService.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ChunkingService.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ChunkingService.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Core/CorrectionService.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionService.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionService.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionService.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionService.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionService.swiftdeps"
+  }
+}

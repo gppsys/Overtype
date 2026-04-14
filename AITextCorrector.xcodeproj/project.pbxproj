@@ -35,6 +35,8 @@
 		026 /* AITextCorrector/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701 /* AITextCorrector/Assets.xcassets */; };
 		027 /* AITextCorrector/App/TonePaletteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109 /* AITextCorrector/App/TonePaletteController.swift */; };
 		028 /* AITextCorrector/App/TonePaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110 /* AITextCorrector/App/TonePaletteView.swift */; };
+		029 /* AITextCorrector/Core/LanguageHeuristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207 /* AITextCorrector/Core/LanguageHeuristics.swift */; };
+		030 /* AITextCorrector/Accessibility/AppReplacementHeuristics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305 /* AITextCorrector/Accessibility/AppReplacementHeuristics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,10 +57,12 @@
 		204 /* AITextCorrector/Core/OutputSanitizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/OutputSanitizer.swift; sourceTree = SOURCE_ROOT; };
 		205 /* AITextCorrector/Core/PromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/PromptBuilder.swift; sourceTree = SOURCE_ROOT; };
 		206 /* AITextCorrector/Core/RiskAssessmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/RiskAssessmentService.swift; sourceTree = SOURCE_ROOT; };
+		207 /* AITextCorrector/Core/LanguageHeuristics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Core/LanguageHeuristics.swift; sourceTree = SOURCE_ROOT; };
 		301 /* AITextCorrector/Accessibility/AccessibilityPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Accessibility/AccessibilityPermissionManager.swift; sourceTree = SOURCE_ROOT; };
 		302 /* AITextCorrector/Accessibility/FocusedElementReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Accessibility/FocusedElementReader.swift; sourceTree = SOURCE_ROOT; };
 		303 /* AITextCorrector/Accessibility/TextReplacementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Accessibility/TextReplacementService.swift; sourceTree = SOURCE_ROOT; };
 		304 /* AITextCorrector/Accessibility/TextSelectionCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Accessibility/TextSelectionCaptureService.swift; sourceTree = SOURCE_ROOT; };
+		305 /* AITextCorrector/Accessibility/AppReplacementHeuristics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Accessibility/AppReplacementHeuristics.swift; sourceTree = SOURCE_ROOT; };
 		401 /* AITextCorrector/Models/AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Models/AppSettings.swift; sourceTree = SOURCE_ROOT; };
 		402 /* AITextCorrector/Models/CorrectionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Models/CorrectionModels.swift; sourceTree = SOURCE_ROOT; };
 		501 /* AITextCorrector/Storage/KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITextCorrector/Storage/KeychainService.swift; sourceTree = SOURCE_ROOT; };
@@ -136,6 +140,7 @@
 				302 /* AITextCorrector/Accessibility/FocusedElementReader.swift */,
 				303 /* AITextCorrector/Accessibility/TextReplacementService.swift */,
 				304 /* AITextCorrector/Accessibility/TextSelectionCaptureService.swift */,
+				305 /* AITextCorrector/Accessibility/AppReplacementHeuristics.swift */,
 			);
 			path = Accessibility;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				204 /* AITextCorrector/Core/OutputSanitizer.swift */,
 				205 /* AITextCorrector/Core/PromptBuilder.swift */,
 				206 /* AITextCorrector/Core/RiskAssessmentService.swift */,
+				207 /* AITextCorrector/Core/LanguageHeuristics.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -266,10 +272,12 @@
 				012 /* AITextCorrector/Core/OutputSanitizer.swift in Sources */,
 				013 /* AITextCorrector/Core/PromptBuilder.swift in Sources */,
 				014 /* AITextCorrector/Core/RiskAssessmentService.swift in Sources */,
+				029 /* AITextCorrector/Core/LanguageHeuristics.swift in Sources */,
 				015 /* AITextCorrector/Accessibility/AccessibilityPermissionManager.swift in Sources */,
 				016 /* AITextCorrector/Accessibility/FocusedElementReader.swift in Sources */,
 				017 /* AITextCorrector/Accessibility/TextReplacementService.swift in Sources */,
 				018 /* AITextCorrector/Accessibility/TextSelectionCaptureService.swift in Sources */,
+				030 /* AITextCorrector/Accessibility/AppReplacementHeuristics.swift in Sources */,
 				019 /* AITextCorrector/Models/AppSettings.swift in Sources */,
 				020 /* AITextCorrector/Models/CorrectionModels.swift in Sources */,
 				021 /* AITextCorrector/Storage/KeychainService.swift in Sources */,

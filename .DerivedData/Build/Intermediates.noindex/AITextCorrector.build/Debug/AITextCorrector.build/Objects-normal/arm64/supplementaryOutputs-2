@@ -1,0 +1,23 @@
+{
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/CorrectionCoordinator.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionCoordinator.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionCoordinator.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionCoordinator.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionCoordinator.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/CorrectionCoordinator.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/MenuBarController.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MenuBarController.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MenuBarController.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MenuBarController.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MenuBarController.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MenuBarController.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/OnboardingView.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/OnboardingView.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/OnboardingView.swiftdeps"
+  }
+}

@@ -29,6 +29,7 @@ struct CorrectionResult: Sendable {
 struct CapturedSelection {
     let text: String
     let accessibilityContext: AccessibilitySelectionContext?
+    let appBundleIdentifier: String?
 }
 
 struct CaptureDiagnosticReport: Sendable {

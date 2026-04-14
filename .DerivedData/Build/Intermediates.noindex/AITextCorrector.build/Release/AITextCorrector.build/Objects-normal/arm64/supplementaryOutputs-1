@@ -1,0 +1,12 @@
+{
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/MainApp.swift" : {
+    "abi-baseline-json" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector.abi.json",
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary.dia",
+    "objc-header" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-Swift.h",
+    "swiftdoc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector.swiftdoc",
+    "swiftmodule" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector.swiftmodule",
+    "swiftsourceinfo" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector.swiftsourceinfo"
+  }
+}

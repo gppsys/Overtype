@@ -93,6 +93,32 @@ final class TextReplacementService {
         }
     }
 
+    func snapshotClipboard() -> ClipboardSnapshot? {
+        let pasteboard = NSPasteboard.general
+        guard let pasteboardItems = pasteboard.pasteboardItems, !pasteboardItems.isEmpty else {
+            return nil
+        }
+        let items = pasteboardItems.map { item in
+            ClipboardSnapshot.Item(types: item.types.compactMap { type in
+                guard let data = item.data(forType: type) else { return nil }
+                return (type, data)
+            })
+        }
+        return ClipboardSnapshot(items: items)
+    }
+
+    func restoreClipboard(_ snapshot: ClipboardSnapshot) {
+        let pasteboard = NSPasteboard.general
+        pasteboard.clearContents()
+        for item in snapshot.items {
+            let pbItem = NSPasteboardItem()
+            for (type, data) in item.types {
+                pbItem.setData(data, forType: type)
+            }
+            pasteboard.writeObjects([pbItem])
+        }
+    }
+
     func replaceCurrentSelectionIfStillMatching(originalSelection: String, replacementText: String) throws -> Bool {
         guard let currentContext = try? focusedElementReader.readSelection() else {
             return false
@@ -108,24 +134,22 @@ final class TextReplacementService {
 
     func pasteFromClipboardIntoFocusedApp() async throws {
         try await Task.sleep(for: .milliseconds(120))
-        do {
-            try postPasteEvent(to: .cgSessionEventTap)
-        } catch {
-            try postPasteEvent(to: .cghidEventTap)
-        }
-    }
-
-    private func postPasteEvent(to tap: CGEventTapLocation) throws {
         guard let source = CGEventSource(stateID: .combinedSessionState),
               let keyDown = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_ANSI_V), keyDown: true),
               let keyUp = CGEvent(keyboardEventSource: source, virtualKey: CGKeyCode(kVK_ANSI_V), keyDown: false) else {
             throw TextReplacementError.pasteFailed
         }
-
-        keyDown.flags = CGEventFlags.maskCommand
-        keyUp.flags = CGEventFlags.maskCommand
-        keyDown.post(tap: tap)
-        keyUp.post(tap: tap)
+        keyDown.flags = .maskCommand
+        keyUp.flags = .maskCommand
+        // Use .cghidEventTap (HID stream) instead of .cgSessionEventTap.
+        // The session tap injects into the shared session event stream and disconnects
+        // ViewBridge/RemoteViewService in XPC-based apps (browsers, Electron, etc.).
+        // postToPid() avoids that but requires a Mach task port right that the sandbox
+        // denies ("Unable to obtain a task name port right"), so keystrokes are silently
+        // dropped. .cghidEventTap works reliably in sandboxed apps with Accessibility
+        // permission and does not disturb ViewBridge.
+        keyDown.post(tap: .cghidEventTap)
+        keyUp.post(tap: .cghidEventTap)
     }
 
     private func copyStringAttribute(_ attribute: CFString, from element: AXUIElement) -> String? {

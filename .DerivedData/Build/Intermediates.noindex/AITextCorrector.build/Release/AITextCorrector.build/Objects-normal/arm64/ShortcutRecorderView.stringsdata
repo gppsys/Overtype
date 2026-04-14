@@ -1,0 +1,24 @@
+{
+  "source": "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/UI/ShortcutRecorderView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Restablecer al shortcut por defecto",
+        "location": {
+          "startingColumn": 15,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "Presiona el shortcut…",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 58
+        }
+      }
+    ]
+  },
+  "version": 1
+}

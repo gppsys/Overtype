@@ -5,6 +5,7 @@ import SwiftUI
 final class AppState: ObservableObject {
     @Published var isProcessing = false
     @Published var statusMessage = "Listo"
+    @Published var processingProgress: (current: Int, total: Int)? = nil
     @Published var lastErrorMessage: String?
     @Published var lastCaptureDiagnostic: CaptureDiagnosticReport?
     @Published var accessibilityEnvironmentDiagnostic: AccessibilityEnvironmentDiagnostic?

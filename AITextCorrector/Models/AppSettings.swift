@@ -65,6 +65,7 @@ struct AppSettings: Codable, Equatable, Sendable {
     var showNotifications: Bool
     var replaceAutomaticallyWhenPossible: Bool
     var enableTechnicalLogs: Bool
+    var restoreClipboardAfterDirectReplacement: Bool
 
     static let `default` = AppSettings(
         defaultTone: ToneOption.presets.first?.id ?? "Friendly",
@@ -76,6 +77,7 @@ struct AppSettings: Codable, Equatable, Sendable {
         translateToEnglishShortcut: .translateDefault,
         showNotifications: true,
         replaceAutomaticallyWhenPossible: true,
-        enableTechnicalLogs: false
+        enableTechnicalLogs: false,
+        restoreClipboardAfterDirectReplacement: true
     )
 }

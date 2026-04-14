@@ -1,0 +1,23 @@
+{
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/AppDelegate.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppDelegate.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppDelegate.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/AppState.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppState.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppState.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppState.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/AppState.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/MainApp.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MainApp.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MainApp.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MainApp.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MainApp.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/MainApp.swiftdeps"
+  }
+}

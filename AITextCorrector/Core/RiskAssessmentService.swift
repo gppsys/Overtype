@@ -3,6 +3,7 @@ import Foundation
 struct RiskAssessmentService {
     let suspiciousShrinkRatio: Double = 0.3
     let suspiciousGrowthRatio: Double = 4
+    private let languageHeuristics = LanguageHeuristics()
 
     func assess(originalText: String, correctedText: String, action: TextTransformationAction) -> String? {
         let originalCore = originalText.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -10,6 +11,17 @@ struct RiskAssessmentService {
 
         if correctedCore.isEmpty {
             return "La respuesta llegó vacía."
+        }
+
+        switch action {
+        case .correct:
+            if languageHeuristics.correctionLooksTranslated(original: originalCore, corrected: correctedCore) {
+                return "La respuesta parece haber cambiado de idioma en vez de solo corregir el texto."
+            }
+        case .translateToEnglish:
+            if languageHeuristics.translationDoesNotLookEnglish(original: originalCore, translated: correctedCore) {
+                return "La respuesta no parece una traducción clara al inglés."
+            }
         }
 
         if originalCore.count < 120 {

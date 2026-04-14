@@ -129,6 +129,7 @@ final class CorrectionCoordinator {
         defer {
             appState?.isProcessing = false
             appState?.statusMessage = "Listo"
+            appState?.processingProgress = nil
         }
 
         do {
@@ -143,7 +144,10 @@ final class CorrectionCoordinator {
                 return
             }
 
-            if settingsStore.settings.replaceAutomaticallyWhenPossible,
+            let replacementStrategy = AppReplacementHeuristics.strategy(for: selection.appBundleIdentifier)
+
+            if replacementStrategy == .accessibilityPreferred,
+               settingsStore.settings.replaceAutomaticallyWhenPossible,
                let context = selection.accessibilityContext {
                 do {
                     try replacementService.replace(result.correctedText, using: context)
@@ -153,20 +157,12 @@ final class CorrectionCoordinator {
                     try await notify(message)
                     return
                 } catch {
-                    try await copyAndAttemptPasteFallback(
-                        result.correctedText,
-                        originalSelection: selection.text,
-                        action: action
-                    )
+                    try await copyAndAttemptPasteFallback(result.correctedText, action: action)
                     return
                 }
             }
 
-            try await copyAndAttemptPasteFallback(
-                result.correctedText,
-                originalSelection: selection.text,
-                action: action
-            )
+            try await copyAndAttemptPasteFallback(result.correctedText, action: action)
         } catch {
             appState?.lastErrorMessage = error.localizedDescription
             try? await notify(error.localizedDescription)
@@ -179,10 +175,17 @@ final class CorrectionCoordinator {
 
     private func transformRawText(_ text: String, toneOverride: String?, action: TextTransformationAction) async throws -> CorrectionResult {
         let execution = try makeExecutionContext(for: text, toneOverride: toneOverride, action: action)
+        let progress: @Sendable (Int, Int) -> Void = { [weak appState] current, total in
+            guard total > 1 else { return }
+            Task { @MainActor [weak appState] in
+                appState?.processingProgress = (current: current, total: total)
+            }
+        }
         return try await correctionService.correctText(
             execution.request,
             apiKey: execution.apiKey,
-            showNotifications: execution.showNotifications
+            showNotifications: execution.showNotifications,
+            onProgress: progress
         )
     }
 
@@ -216,48 +219,40 @@ final class CorrectionCoordinator {
         }
     }
 
-    private func copyAndAttemptPasteFallback(_ text: String, originalSelection: String, action: TextTransformationAction) async throws {
+    private func copyAndAttemptPasteFallback(_ text: String, action: TextTransformationAction) async throws {
+        // Corrected text lands in the clipboard first so the user can always paste manually
+        // even if the automatic Cmd+V below doesn't land.
         try replacementService.copyToClipboard(text)
 
-        if settingsStore.settings.replaceAutomaticallyWhenPossible {
-            do {
-                if try replacementService.replaceCurrentSelectionIfStillMatching(
-                    originalSelection: originalSelection,
-                    replacementText: text
-                ) {
-                    let replacedMessage = action == .correct
-                        ? "No se pudo reemplazar con el contexto original, pero se reemplazó la selección actual."
-                        : "No se pudo reemplazar con el contexto original, pero se tradujo y reemplazó la selección actual."
-                    try await notify(replacedMessage)
-                    return
-                }
-
-                try await replacementService.pasteFromClipboardIntoFocusedApp()
-                let pastedMessage = action == .correct
-                    ? "No se pudo reemplazar directamente, pero el texto corregido se pegó automáticamente."
-                    : "No se pudo reemplazar directamente, pero la traducción al inglés se pegó automáticamente."
-                try await notify(pastedMessage)
-                return
-            } catch {
-                do {
-                    try replacementService.copyToClipboard(text)
-                    try await Task.sleep(for: .milliseconds(80))
-                    try await replacementService.pasteFromClipboardIntoFocusedApp()
-                    let pastedMessage = action == .correct
-                        ? "No se pudo reemplazar directamente, pero el texto corregido se pegó automáticamente."
-                        : "No se pudo reemplazar directamente, pero la traducción al inglés se pegó automáticamente."
-                    try await notify(pastedMessage)
-                    return
-                } catch {
-                    // Fall through to clipboard-only notification.
-                }
-            }
+        guard settingsStore.settings.replaceAutomaticallyWhenPossible else {
+            let copiedMessage = action == .correct
+                ? "Texto corregido copiado al portapapeles."
+                : "Traducción al inglés copiada al portapapeles."
+            try await notify(copiedMessage)
+            return
         }
 
-        let copiedMessage = action == .correct
-            ? "Texto corregido copiado al portapapeles."
-            : "Traducción al inglés copiada al portapapeles."
-        try await notify(copiedMessage)
+        let pastedMessage = action == .correct
+            ? "Texto corregido pegado automáticamente."
+            : "Traducción al inglés pegada automáticamente."
+
+        do {
+            try await replacementService.pasteFromClipboardIntoFocusedApp()
+            try await notify(pastedMessage)
+        } catch {
+            // One retry after a short delay in case the app needed a moment to settle.
+            do {
+                try await Task.sleep(for: .milliseconds(120))
+                try await replacementService.pasteFromClipboardIntoFocusedApp()
+                try await notify(pastedMessage)
+            } catch {
+                // Paste failed — corrected text is still in the clipboard for manual paste.
+                let copiedMessage = action == .correct
+                    ? "Texto corregido copiado al portapapeles (pegado manual necesario)."
+                    : "Traducción al inglés copiada al portapapeles (pegado manual necesario)."
+                try await notify(copiedMessage)
+            }
+        }
     }
 }
 

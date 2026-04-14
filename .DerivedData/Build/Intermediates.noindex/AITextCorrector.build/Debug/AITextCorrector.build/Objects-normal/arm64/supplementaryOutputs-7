@@ -1,0 +1,23 @@
+{
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Accessibility/FocusedElementReader.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/FocusedElementReader.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/FocusedElementReader.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/FocusedElementReader.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/FocusedElementReader.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/FocusedElementReader.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Accessibility/TextReplacementService.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextReplacementService.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextReplacementService.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextReplacementService.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextReplacementService.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextReplacementService.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Accessibility/TextSelectionCaptureService.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextSelectionCaptureService.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextSelectionCaptureService.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextSelectionCaptureService.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextSelectionCaptureService.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/TextSelectionCaptureService.swiftdeps"
+  }
+}

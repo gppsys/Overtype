@@ -167,7 +167,7 @@ struct SettingsView: View {
         settingsCard("Integración") {
             VStack(alignment: .leading, spacing: 14) {
                 LabeledContent("Shortcut corregir") {
-                    ShortcutRecorderView(shortcut: shortcutBinding)
+                    ShortcutRecorderView(shortcut: shortcutBinding, defaultShortcut: .default)
                 }
                 if let shortcutRegistrationMessage = appState.shortcutRegistrationMessage {
                     Text(shortcutRegistrationMessage)
@@ -175,7 +175,7 @@ struct SettingsView: View {
                         .font(.subheadline)
                 }
                 LabeledContent("Shortcut traducir a inglés") {
-                    ShortcutRecorderView(shortcut: translateShortcutBinding)
+                    ShortcutRecorderView(shortcut: translateShortcutBinding, defaultShortcut: .translateDefault)
                 }
                 if let translateShortcutRegistrationMessage = appState.translateShortcutRegistrationMessage {
                     Text(translateShortcutRegistrationMessage)
@@ -184,6 +184,7 @@ struct SettingsView: View {
                 }
                 Toggle("Mostrar notificaciones", isOn: showNotificationsBinding)
                 Toggle("Reemplazar automáticamente cuando sea posible", isOn: replaceAutomaticallyBinding)
+                Toggle("Restaurar portapapeles tras reemplazo directo", isOn: restoreClipboardBinding)
                 Toggle("Logs técnicos opcionales", isOn: technicalLogsBinding)
             }
         }
@@ -437,6 +438,17 @@ struct SettingsView: View {
             set: { value in
                 appState.settingsStore.update { settings in
                     settings.replaceAutomaticallyWhenPossible = value
+                }
+            }
+        )
+    }
+
+    private var restoreClipboardBinding: Binding<Bool> {
+        Binding(
+            get: { appState.settingsStore.settings.restoreClipboardAfterDirectReplacement },
+            set: { value in
+                appState.settingsStore.update { settings in
+                    settings.restoreClipboardAfterDirectReplacement = value
                 }
             }
         )

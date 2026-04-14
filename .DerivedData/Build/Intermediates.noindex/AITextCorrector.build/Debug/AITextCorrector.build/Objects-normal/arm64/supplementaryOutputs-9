@@ -1,0 +1,23 @@
+{
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Storage/SettingsStore.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/SettingsStore.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/SettingsStore.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/SettingsStore.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/SettingsStore.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/SettingsStore.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/UI/NotificationService.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/NotificationService.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/NotificationService.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/NotificationService.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/NotificationService.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/NotificationService.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/UI/ShortcutManager.swift" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ShortcutManager.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ShortcutManager.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ShortcutManager.dia",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ShortcutManager.o",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Debug/AITextCorrector.build/Objects-normal/arm64/ShortcutManager.swiftdeps"
+  }
+}

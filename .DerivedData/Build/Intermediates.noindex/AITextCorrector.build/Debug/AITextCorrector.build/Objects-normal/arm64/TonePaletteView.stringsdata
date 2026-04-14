@@ -1,0 +1,48 @@
+{
+  "source": "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/TonePaletteView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Corregir texto",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Predeterminado: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Usar tono predeterminado",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dejar este tono como predeterminado",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 91
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tono predeterminado actual",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 68
+        }
+      }
+    ]
+  },
+  "version": 1
+}

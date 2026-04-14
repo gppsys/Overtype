@@ -21,7 +21,7 @@ actor CorrectionService {
         self.notificationService = notificationService
     }
 
-    func correctText(_ request: CorrectionRequest, apiKey: String, showNotifications: Bool) async throws -> CorrectionResult {
+    func correctText(_ request: CorrectionRequest, apiKey: String, showNotifications: Bool, onProgress: (@Sendable (Int, Int) -> Void)? = nil) async throws -> CorrectionResult {
         let perRequestLimit = min(chunkingService.maxCharsPerRequest, request.settings.maxInputChars)
         let chunks = chunkingService.splitTextIntoChunks(request.text, maxChars: perRequestLimit)
 
@@ -39,6 +39,7 @@ actor CorrectionService {
                 chunkIndex: index + 1,
                 totalChunks: chunks.count
             ))
+            onProgress?(index + 1, chunks.count)
         }
 
         let correctedText = correctedChunks.joined()

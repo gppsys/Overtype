@@ -37,7 +37,9 @@ final class TextSelectionCaptureService {
     }
 
     func captureSelectedText() async throws -> CapturedSelection {
-        let appName = NSWorkspace.shared.frontmostApplication?.localizedName
+        let frontmostApp = NSWorkspace.shared.frontmostApplication
+        let appName = frontmostApp?.localizedName
+        let appBundleIdentifier = frontmostApp?.bundleIdentifier
 
         do {
             let accessibilitySelection = try focusedElementReader.readSelection()
@@ -49,7 +51,7 @@ final class TextSelectionCaptureService {
                 clipboardDetail: "Clipboard fallback not needed.",
                 finalStatus: "Success via Accessibility."
             )
-            return CapturedSelection(text: accessibilitySelection.selectedText, accessibilityContext: accessibilitySelection)
+            return CapturedSelection(text: accessibilitySelection.selectedText, accessibilityContext: accessibilitySelection, appBundleIdentifier: appBundleIdentifier)
         } catch {
             let accessibilityMessage = error.localizedDescription
 
@@ -63,7 +65,7 @@ final class TextSelectionCaptureService {
                     clipboardDetail: "Clipboard fallback captured the selected text successfully.",
                     finalStatus: "Success via clipboard fallback."
                 )
-                return CapturedSelection(text: text, accessibilityContext: nil)
+                return CapturedSelection(text: text, accessibilityContext: nil, appBundleIdentifier: appBundleIdentifier)
             } catch {
                 lastDiagnosticReport = CaptureDiagnosticReport(
                     appName: appName,
@@ -83,7 +85,7 @@ final class TextSelectionCaptureService {
               !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             throw TextCaptureError.noSelection
         }
-        return CapturedSelection(text: text, accessibilityContext: nil)
+        return CapturedSelection(text: text, accessibilityContext: nil, appBundleIdentifier: nil)
     }
 
     private func captureViaClipboardShortcut() async throws -> String {
