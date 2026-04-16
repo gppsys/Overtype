@@ -1,0 +1,161 @@
+{
+  "" : {
+    "const-values" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary.swiftconstvalues",
+    "dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary.d",
+    "diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary.dia",
+    "emit-module-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary-emit-module.dia",
+    "pch" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AITextCorrector-primary.swiftdeps"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Accessibility/AccessibilityPermissionManager.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AccessibilityPermissionManager.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AccessibilityPermissionManager.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AccessibilityPermissionManager.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Accessibility/AppReplacementHeuristics.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppReplacementHeuristics.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppReplacementHeuristics.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppReplacementHeuristics.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Accessibility/FocusedElementReader.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/FocusedElementReader.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/FocusedElementReader.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/FocusedElementReader.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Accessibility/TextReplacementService.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TextReplacementService.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TextReplacementService.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TextReplacementService.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Accessibility/TextSelectionCaptureService.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TextSelectionCaptureService.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TextSelectionCaptureService.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TextSelectionCaptureService.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/AppDelegate.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/AppState.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppState.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/CorrectionCoordinator.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/CorrectionCoordinator.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/CorrectionCoordinator.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/CorrectionCoordinator.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/MainApp.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/MainApp.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/MainApp.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/MainApp.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/MenuBarController.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/MenuBarController.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/MenuBarController.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/MenuBarController.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/OnboardingView.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/OnboardingView.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/OnboardingView.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/OnboardingView.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/ServicesProvider.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ServicesProvider.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ServicesProvider.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ServicesProvider.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/SettingsView.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/SettingsView.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/TonePaletteController.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TonePaletteController.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TonePaletteController.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TonePaletteController.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/App/TonePaletteView.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TonePaletteView.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TonePaletteView.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/TonePaletteView.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Core/ChunkingService.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ChunkingService.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ChunkingService.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ChunkingService.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Core/CorrectionService.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/CorrectionService.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/CorrectionService.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/CorrectionService.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Core/LanguageHeuristics.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/LanguageHeuristics.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/LanguageHeuristics.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/LanguageHeuristics.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Core/OpenAIClient.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/OpenAIClient.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/OpenAIClient.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/OpenAIClient.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Core/OutputSanitizer.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/OutputSanitizer.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/OutputSanitizer.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/OutputSanitizer.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Core/PromptBuilder.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/PromptBuilder.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/PromptBuilder.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/PromptBuilder.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Core/RiskAssessmentService.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/RiskAssessmentService.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/RiskAssessmentService.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/RiskAssessmentService.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Models/AppSettings.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppSettings.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppSettings.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/AppSettings.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Models/CorrectionModels.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/CorrectionModels.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/CorrectionModels.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/CorrectionModels.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Storage/KeychainService.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/KeychainService.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/KeychainService.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/KeychainService.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/Storage/SettingsStore.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/SettingsStore.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/SettingsStore.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/SettingsStore.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/UI/NotificationService.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/NotificationService.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/NotificationService.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/NotificationService.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/UI/ShortcutManager.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ShortcutManager.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ShortcutManager.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ShortcutManager.o"
+  },
+  "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector/UI/ShortcutRecorderView.swift" : {
+    "index-unit-output-path" : "/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ShortcutRecorderView.o",
+    "llvm-bc" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ShortcutRecorderView.bc",
+    "object" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/AITextCorrector.build/Release/AITextCorrector.build/Objects-normal/arm64/ShortcutRecorderView.o"
+  }
+}

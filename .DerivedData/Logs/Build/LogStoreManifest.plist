@@ -5,6 +5,49 @@
 	<key>logFormatVersion</key>
 	<integer>12</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>9D75E547-CCC0-4544-984C-2048E5C08E4B</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9D75E547-CCC0-4544-984C-2048E5C08E4B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AITextCorrector project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AITextCorrector</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project AITextCorrector with scheme AITextCorrector and configuration Release</string>
+			<key>timeStartedRecording</key>
+			<real>797903323.02210402</real>
+			<key>timeStoppedRecording</key>
+			<real>797903329.85877204</real>
+			<key>title</key>
+			<string>Building project AITextCorrector with scheme AITextCorrector and configuration Release</string>
+			<key>uniqueIdentifier</key>
+			<string>9D75E547-CCC0-4544-984C-2048E5C08E4B</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
