@@ -1,51 +1,35 @@
-# OverText Corrector para macOS
+# OverText Corrector
 
-AI Text Corrector es una app de menubar para macOS que corrige texto seleccionado usando OpenAI. Está pensada para usarse desde cualquier app posible del sistema mediante un atajo global, `Services` de macOS y `Accessibility`.
+OverText Corrector es una app open source para macOS que corrige texto seleccionado usando OpenAI. Vive en la menubar y está pensada para trabajar entre aplicaciones mediante un atajo global, `Services` de macOS y `Accessibility`.
 
-Seleccionas texto, ejecutas la acción y la app intenta devolverte el texto corregido en el mismo lugar. Si la app de destino no permite reemplazo directo, el resultado queda en el portapapeles para pegarlo manualmente.
+Seleccionas texto, ejecutas la acción y la app intenta devolver el resultado corregido en el mismo campo. Si la aplicación de destino no permite reemplazo directo, deja el texto corregido en el portapapeles para pegarlo manualmente.
 
-## Qué hace
+## Estado del proyecto
+
+El proyecto está funcional para uso local y pensado como base abierta para seguir iterando.
+
+Incluye hoy:
+
+- app nativa de menubar para macOS
+- onboarding inicial
+- integración con OpenAI
+- corrección de texto por bloques
+- evaluación conservadora de salida
+- atajo global configurable
+- atajo secundario para traducir al inglés
+- `Services` de macOS para distintos tonos
+- integración con `Accessibility`
+- almacenamiento de API key en `Keychain`
+
+## Características
 
 - Corrige ortografía, gramática, puntuación y claridad.
 - Mantiene el idioma original del texto.
 - Permite elegir tono de salida.
-- Tiene atajo global configurable.
-- Incluye `Services` de macOS para varios tonos.
-- Intenta reemplazo directo por `Accessibility` cuando la app lo permite.
-- Usa fallback seguro al portapapeles cuando no puede escribir de vuelta.
-- Guarda la API key en `Keychain`.
-
-## Qué incluye esta versión
-
-- App nativa para macOS en menubar.
-- Onboarding inicial.
-- Configuración de modelo, tono, temperatura y límites.
-- Integración con OpenAI.
-- Corrección de textos largos por bloques.
-- Evaluación conservadora de salida antes de reemplazar.
-- Atajo para corrección.
-- Atajo secundario para traducir al inglés.
-- Integración con `Accessibility`.
-- `Services` de macOS.
-
-## Importante
-
-Esta versión **no está firmada ni notarizada por Apple**.
-
-Eso significa que:
-
-- no está pensada para instalarse como app distribuida al público general con doble clic y ya
-- lo más simple es usarla desde Xcode y compilarla localmente
-- si exportas la app manualmente, macOS puede mostrar advertencias de seguridad o bloquear el primer arranque
-
-Si macOS bloquea la app al abrirla, normalmente puedes:
-
-1. intentar abrirla una vez
-2. ir a `System Settings > Privacy & Security`
-3. permitir su apertura manualmente
-4. volver a abrirla
-
-Si quieres distribuirla como app lista para terceros, tendrías que firmarla y notarizarla aparte.
+- Intenta reemplazo directo en la app activa.
+- Usa fallback al portapapeles cuando no puede escribir de vuelta.
+- Muestra notificaciones opcionales del flujo.
+- Permite configurar modelo, temperatura y límites.
 
 ## Requisitos
 
@@ -55,17 +39,17 @@ Si quieres distribuirla como app lista para terceros, tendrías que firmarla y n
 
 ## Instalación
 
-Hoy la forma recomendada de usar este repo es **compilarlo localmente**.
+La forma recomendada de usar este repositorio hoy es compilarlo localmente.
 
 1. Clona este repositorio.
 2. Abre [AITextCorrector.xcodeproj](/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector.xcodeproj) en Xcode.
 3. Selecciona el target `AITextCorrector`.
-4. Configura tu `Team` de firma si Xcode lo pide para compilar localmente.
-5. Ejecuta la app.
+4. Configura tu `Team` de firma si Xcode lo solicita.
+5. Compila y ejecuta la app.
 
-## Configuración inicial
+## Primer arranque
 
-La primera vez que abras la app:
+Al abrir la app por primera vez:
 
 1. abre `Settings`
 2. guarda tu API key de OpenAI
@@ -73,13 +57,13 @@ La primera vez que abras la app:
 4. opcionalmente permite notificaciones
 5. prueba primero en `TextEdit` o `Notes`
 
-## Cómo usarla
+## Uso
 
-### Opción 1: atajo global
+### Atajo global
 
-1. Selecciona texto en una app.
+1. Selecciona texto en cualquier app compatible.
 2. Usa el atajo global.
-3. La app leerá la selección, la corregirá y tratará de reemplazarla.
+3. La app intentará leer la selección, corregirla y reemplazarla.
 
 Atajo por defecto para corregir:
 
@@ -89,9 +73,9 @@ Atajo por defecto para traducir al inglés:
 
 - `Control + Option + Command + E`
 
-### Opción 2: Services de macOS
+### Services de macOS
 
-En apps compatibles con `Services`, también puedes usar:
+En aplicaciones compatibles con `Services`, también puedes usar:
 
 - `Corregir con AI`
 - `Corregir con AI (Friendly)`
@@ -102,15 +86,15 @@ En apps compatibles con `Services`, también puedes usar:
 
 ## Cómo funciona
 
-El flujo real es este:
+El flujo general es este:
 
 1. capturar el texto seleccionado
-2. enviarlo a OpenAI con instrucciones para corregirlo sin resumirlo ni traducirlo
-3. validar si la salida parece segura
+2. enviarlo a OpenAI con instrucciones para corregir sin traducir ni resumir
+3. revisar si la salida parece segura
 4. intentar reemplazar el texto en la app activa
 5. si eso falla, dejar el resultado en el portapapeles
 
-La app prioriza un comportamiento conservador: es mejor pedir un pegado manual que reemplazar texto de forma insegura.
+La app sigue una estrategia conservadora: prioriza no romper el texto del usuario cuando la integración con la app destino no es confiable.
 
 ## Permisos
 
@@ -118,25 +102,25 @@ La app prioriza un comportamiento conservador: es mejor pedir un pegado manual q
 
 Es el permiso principal. Se usa para:
 
-- leer selección
+- leer la selección
 - detectar el campo enfocado
 - intentar reemplazo directo
-- mejorar el flujo universal del atajo global
+- mejorar el comportamiento del atajo global
 
-Sin este permiso, la integración entre apps será mucho más limitada.
+Sin este permiso, la utilidad del proyecto baja bastante fuera de apps muy cooperativas.
 
 ### Notificaciones
 
 Es opcional, pero útil para saber:
 
-- si la corrección terminó
+- cuándo terminó una corrección
 - si hubo reemplazo directo
 - si el resultado quedó en el portapapeles
-- si falta algún permiso
+- si falta algún permiso o hubo un error
 
-## Limitaciones reales
+## Limitaciones
 
-Funciona mejor en apps que exponen sus controles de texto correctamente a macOS, por ejemplo:
+Funciona mejor en aplicaciones que exponen correctamente sus campos de texto a macOS, por ejemplo:
 
 - `TextEdit`
 - `Notes`
@@ -149,14 +133,33 @@ Puede fallar o degradar al portapapeles en:
 - campos enriquecidos personalizados
 - apps que no exponen bien `Accessibility`
 
-No existe una API universal en macOS que permita leer y escribir selección en absolutamente todas las apps. Por eso este proyecto combina:
+macOS no ofrece una API universal que garantice lectura y reemplazo de selección en todas las apps. Por eso el proyecto combina:
 
 - atajo global
 - `Services`
 - `Accessibility`
 - fallback al portapapeles
 
-## Configuración disponible
+## Distribución y seguridad
+
+Esta versión **no está firmada ni notarizada por Apple**.
+
+Eso implica que:
+
+- no está empaquetada como app lista para distribución masiva
+- lo normal es usarla compilándola localmente desde Xcode
+- si exportas la app manualmente, macOS puede mostrar advertencias de seguridad
+
+Si macOS bloquea la apertura:
+
+1. intenta abrir la app una vez
+2. ve a `System Settings > Privacy & Security`
+3. permite la apertura manualmente
+4. vuelve a abrirla
+
+La API key se guarda en `Keychain`. La configuración no sensible se guarda en `UserDefaults`.
+
+## Configuración
 
 Desde `Settings` puedes cambiar:
 
@@ -173,13 +176,6 @@ Desde `Settings` puedes cambiar:
 - restauración del portapapeles
 - logs técnicos opcionales
 
-## Seguridad
-
-- La API key se guarda en `Keychain`.
-- La configuración no sensible se guarda en `UserDefaults`.
-- El texto corregido puede pasar por el portapapeles cuando no hay reemplazo directo.
-- La app no está firmada ni notarizada en esta versión.
-
 ## Stack
 
 - Swift
@@ -190,6 +186,20 @@ Desde `Settings` puedes cambiar:
 - Keychain Services
 - UserNotifications
 
-## Resumen
+## Contribuir
 
-Este repo entrega una versión funcional del corrector como utilidad nativa de macOS. No es una app distribuida oficialmente por Apple, pero sí una base usable para compilar localmente y trabajar con texto seleccionado en múltiples apps del sistema.
+Las contribuciones son bienvenidas.
+
+Áreas especialmente interesantes para seguir mejorando:
+
+- compatibilidad con más apps y editores
+- heurísticas de reemplazo por aplicación
+- tests para chunking, sanitización y evaluación de riesgo
+- experiencia de onboarding y permisos
+- firma, notarización y distribución
+
+Si vas a proponer cambios grandes, abrir un issue primero puede ayudar a alinear el enfoque.
+
+## Licencia
+
+Este repositorio no declara todavía una licencia en este README. Si planeas publicarlo como open source para contribuciones externas, conviene añadir un archivo `LICENSE`.
