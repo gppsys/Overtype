@@ -9,12 +9,18 @@ struct SettingsView: View {
     @State private var saveMessage: String?
     @State private var isSaving = false
 
+    // Custom tones form
+    @State private var showAddToneForm = false
+    @State private var newToneName = ""
+    @State private var newToneInstructions = ""
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 headerCard
                 openAICard
                 correctionCard
+                customTonesCard
                 integrationCard
                 permissionsCard
                 environmentCard
@@ -186,6 +192,135 @@ struct SettingsView: View {
                 Toggle("Reemplazar automáticamente cuando sea posible", isOn: replaceAutomaticallyBinding)
                 Toggle("Restaurar portapapeles tras reemplazo directo", isOn: restoreClipboardBinding)
                 Toggle("Logs técnicos opcionales", isOn: technicalLogsBinding)
+            }
+        }
+    }
+
+    // MARK: - Custom tones card
+
+    private var customTonesCard: some View {
+        settingsCard("Tonos personalizados") {
+            VStack(alignment: .leading, spacing: 14) {
+                Text("Crea tonos propios indicando un nombre y las instrucciones que se enviarán al modelo. El texto de instrucciones reemplaza la descripción del tono en el prompt.")
+                    .foregroundStyle(.secondary)
+
+                let tones = appState.settingsStore.settings.customTones
+                if tones.isEmpty {
+                    Text("Todavía no hay tonos personalizados.")
+                        .foregroundStyle(.secondary)
+                        .font(.subheadline)
+                } else {
+                    VStack(spacing: 8) {
+                        ForEach(tones) { tone in
+                            HStack(alignment: .top, spacing: 10) {
+                                VStack(alignment: .leading, spacing: 3) {
+                                    Text(tone.title)
+                                        .font(.subheadline.weight(.semibold))
+                                    Text(tone.promptInstructions)
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                        .lineLimit(2)
+                                }
+                                Spacer()
+                                Button {
+                                    deleteCustomTone(tone)
+                                } label: {
+                                    Image(systemName: "trash")
+                                        .foregroundStyle(.red)
+                                }
+                                .buttonStyle(.plain)
+                                .help("Eliminar tono")
+                            }
+                            .padding(10)
+                            .background(
+                                RoundedRectangle(cornerRadius: 8, style: .continuous)
+                                    .fill(Color(nsColor: .windowBackgroundColor))
+                            )
+                        }
+                    }
+                }
+
+                if showAddToneForm {
+                    addToneForm
+                } else {
+                    Button("+ Añadir tono personalizado") {
+                        showAddToneForm = true
+                        newToneName = ""
+                        newToneInstructions = ""
+                    }
+                }
+            }
+        }
+    }
+
+    private var addToneForm: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Divider()
+            Text("Nuevo tono")
+                .font(.subheadline.weight(.semibold))
+
+            LabeledContent("Nombre") {
+                TextField("Ej: Argentino casual", text: $newToneName)
+                    .textFieldStyle(.roundedBorder)
+                    .frame(width: 280)
+            }
+
+            LabeledContent("Instrucciones") {
+                TextField(
+                    "Ej: Corrige usando un estilo conversacional informal rioplatense",
+                    text: $newToneInstructions,
+                    axis: .vertical
+                )
+                .textFieldStyle(.roundedBorder)
+                .lineLimit(2...4)
+                .frame(width: 280)
+            }
+
+            Text("Las instrucciones se envían directamente al modelo como guía de estilo.")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+
+            HStack(spacing: 10) {
+                Button("Guardar") {
+                    saveCustomTone()
+                }
+                .disabled(newToneName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ||
+                          newToneInstructions.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+
+                Button("Cancelar") {
+                    showAddToneForm = false
+                }
+                .buttonStyle(.plain)
+                .foregroundStyle(.secondary)
+            }
+        }
+        .padding(12)
+        .background(
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .fill(Color(nsColor: .controlBackgroundColor))
+        )
+    }
+
+    private func saveCustomTone() {
+        let name = newToneName.trimmingCharacters(in: .whitespacesAndNewlines)
+        let instructions = newToneInstructions.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !name.isEmpty, !instructions.isEmpty else { return }
+
+        let tone = ToneOption.custom(title: name, instructions: instructions)
+        appState.settingsStore.update { settings in
+            settings.customTones.append(tone)
+        }
+        showAddToneForm = false
+        newToneName = ""
+        newToneInstructions = ""
+    }
+
+    private func deleteCustomTone(_ tone: ToneOption) {
+        appState.settingsStore.update { settings in
+            settings.customTones.removeAll { $0.id == tone.id }
+            // If deleted tone was default, fall back to first preset
+            if settings.defaultTone == tone.id {
+                settings.defaultTone = ToneOption.presets.first?.id ?? "Friendly"
             }
         }
     }

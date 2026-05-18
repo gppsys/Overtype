@@ -15,25 +15,50 @@ final class TonePaletteController {
         self.correctionCoordinator = correctionCoordinator
     }
 
+    // MARK: - Present with selection
+
     func present(with selection: CapturedSelection) {
         currentSelection = selection
+        showPanel(mode: .selection(text: selection.text))
+    }
 
+    // MARK: - Present for direct text input (no prior selection needed)
+
+    func presentForDirectInput() {
+        currentSelection = nil
+        showPanel(mode: .directInput)
+    }
+
+    // MARK: - Dismiss
+
+    func dismiss() {
+        panel?.orderOut(nil)
+        currentSelection = nil
+        removeDismissMonitors()
+    }
+
+    // MARK: - Shared panel setup
+
+    private func showPanel(mode: PaletteMode) {
         let rootView = TonePaletteView(
             settingsStore: settingsStore,
-            selectionPreview: makeSelectionPreview(from: selection.text),
-            onUseDefault: { [weak self] in
+            mode: mode,
+            onSelectTone: { [weak self] toneId, action in
                 guard let self, let selection = self.currentSelection else { return }
                 self.dismiss()
-                self.correctionCoordinator.correctCapturedSelection(selection)
+                if action == .correct {
+                    self.correctionCoordinator.correctCapturedSelection(selection, toneOverride: toneId)
+                } else {
+                    self.correctionCoordinator.translateCapturedSelectionToEnglish(selection, toneOverride: toneId)
+                }
             },
-            onSelectTone: { [weak self] tone in
-                guard let self, let selection = self.currentSelection else { return }
-                self.dismiss()
-                self.correctionCoordinator.correctCapturedSelection(selection, toneOverride: tone)
+            onProcessText: { [weak self] text, toneOverride, action in
+                guard let self else { throw CancellationError() }
+                return try await self.correctionCoordinator.processText(text, toneOverride: toneOverride, action: action)
             },
-            onSetDefaultTone: { [weak self] tone in
+            onSetDefaultTone: { [weak self] toneId in
                 self?.settingsStore.update { settings in
-                    settings.defaultTone = tone
+                    settings.defaultTone = toneId
                 }
             },
             onClose: { [weak self] in
@@ -42,13 +67,17 @@ final class TonePaletteController {
         )
 
         let host = NSHostingController(rootView: rootView)
-        let panel = self.panel ?? TonePalettePanel(
-            contentRect: NSRect(x: 0, y: 0, width: 380, height: 460),
-            styleMask: [.nonactivatingPanel, .fullSizeContentView],
-            backing: .buffered,
-            defer: false
-        )
 
+        if panel == nil {
+            panel = TonePalettePanel(
+                contentRect: NSRect(x: 0, y: 0, width: 400, height: 520),
+                styleMask: [.nonactivatingPanel, .fullSizeContentView],
+                backing: .buffered,
+                defer: false
+            )
+        }
+
+        let panel = self.panel!
         panel.contentViewController = host
         panel.level = .popUpMenu
         panel.isFloatingPanel = true
@@ -61,16 +90,11 @@ final class TonePaletteController {
 
         position(panel: panel, near: NSEvent.mouseLocation)
         panel.orderFrontRegardless()
-        self.panel = panel
 
         installDismissMonitors()
     }
 
-    func dismiss() {
-        panel?.orderOut(nil)
-        currentSelection = nil
-        removeDismissMonitors()
-    }
+    // MARK: - Positioning
 
     private func position(panel: NSPanel, near mouseLocation: NSPoint) {
         let screen = NSScreen.screens.first(where: { $0.frame.contains(mouseLocation) }) ?? NSScreen.main
@@ -91,6 +115,8 @@ final class TonePaletteController {
         panel.setFrame(NSRect(origin: origin, size: panelSize), display: true)
     }
 
+    // MARK: - Dismiss monitors
+
     private func installDismissMonitors() {
         removeDismissMonitors()
 
@@ -99,7 +125,7 @@ final class TonePaletteController {
         }
 
         keyMonitor = NSEvent.addLocalMonitorForEvents(matching: [.keyDown]) { [weak self] event in
-            if event.keyCode == 53 {
+            if event.keyCode == 53 { // Escape
                 self?.dismiss()
                 return nil
             }
@@ -108,23 +134,12 @@ final class TonePaletteController {
     }
 
     private func removeDismissMonitors() {
-        if let clickMonitor {
-            NSEvent.removeMonitor(clickMonitor)
-            self.clickMonitor = nil
-        }
-        if let keyMonitor {
-            NSEvent.removeMonitor(keyMonitor)
-            self.keyMonitor = nil
-        }
-    }
-
-    private func makeSelectionPreview(from text: String) -> String {
-        let compact = text.replacingOccurrences(of: "\n", with: " ").trimmingCharacters(in: .whitespacesAndNewlines)
-        if compact.count <= 140 { return compact }
-        let endIndex = compact.index(compact.startIndex, offsetBy: 140)
-        return String(compact[..<endIndex]) + "..."
+        if let m = clickMonitor { NSEvent.removeMonitor(m); clickMonitor = nil }
+        if let m = keyMonitor   { NSEvent.removeMonitor(m); keyMonitor = nil }
     }
 }
+
+// MARK: - Panel subclass
 
 private final class TonePalettePanel: NSPanel {
     override var canBecomeKey: Bool { true }

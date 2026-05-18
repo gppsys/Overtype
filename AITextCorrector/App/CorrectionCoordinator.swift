@@ -69,6 +69,13 @@ final class CorrectionCoordinator {
         }
     }
 
+    /// Process text directly (no selection context) and return the result string.
+    /// Used by the tone palette's manual input mode.
+    func processText(_ text: String, toneOverride: String? = nil, action: TextTransformationAction) async throws -> String {
+        let result = try await transformRawText(text, toneOverride: toneOverride, action: action)
+        return result.correctedText
+    }
+
     func correctServicePasteboard(_ pasteboard: NSPasteboard, toneOverride: String? = nil) throws {
         let selection = try captureService.captureFromServicePasteboard(pasteboard)
         let result = try blockingCorrection(for: selection, toneOverride: toneOverride)

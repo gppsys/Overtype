@@ -1,0 +1,68 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "7038c4a79f3f69e7f03f3d69a75b9070a3d68b461bd9d3533ee1dd3ce4628ed4"
+    }
+  ],
+  "containerPath" : "/Users/gonzalopastorp/Dev/NuevoCorrector/AITextCorrector.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "hostTargetedPlatform" : null,
+      "platform" : "macosx",
+      "sdk" : "macosx26.4",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Products",
+      "derivedDataPath" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData",
+      "indexDataStoreFolderPath" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/gonzalopastorp/Dev/NuevoCorrector/.DerivedData/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "COLOR_DIAGNOSTICS" : "YES",
+          "diagnostic_message_length" : "120",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES",
+          "TOOLCHAINS" : "com.apple.dt.toolchain.Metal.32023.883 $(inherited)"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

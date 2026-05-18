@@ -60,6 +60,18 @@ struct PromptBuilder {
     }
 
     private func toneInstruction(for tone: String, action: TextTransformationAction) -> String {
+        // Custom tones carry their full instruction text inside the sentinel prefix.
+        // Use them verbatim so the user's description reaches the model unchanged.
+        if tone.hasPrefix(ToneOption.customPrefix) {
+            let instructions = String(tone.dropFirst(ToneOption.customPrefix.count))
+            switch action {
+            case .correct:
+                return instructions
+            case .translateToEnglish:
+                return "Translate the text to English. Then apply this style guide: \(instructions)"
+            }
+        }
+
         if tone == "Token-efficient for AI prompts" && action == .correct {
             return """
             Fix spelling, grammar, punctuation, and clarity for text that will be sent to another AI.

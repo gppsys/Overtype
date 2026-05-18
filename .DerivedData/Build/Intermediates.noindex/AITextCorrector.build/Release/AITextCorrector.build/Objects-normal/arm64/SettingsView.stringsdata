@@ -7,7 +7,7 @@
         "key": "Configuración",
         "location": {
           "startingColumn": 18,
-          "startingLine": 38
+          "startingLine": 44
         }
       },
       {
@@ -15,7 +15,7 @@
         "key": "Ajusta OpenAI, el tono, los límites y la integración con macOS. La API key se guarda en Keychain.",
         "location": {
           "startingColumn": 18,
-          "startingLine": 40
+          "startingLine": 46
         }
       },
       {
@@ -23,7 +23,7 @@
         "key": "API key",
         "location": {
           "startingColumn": 22,
-          "startingLine": 49
+          "startingLine": 55
         }
       },
       {
@@ -31,7 +31,7 @@
         "key": "Modelo",
         "location": {
           "startingColumn": 32,
-          "startingLine": 101
+          "startingLine": 107
         }
       },
       {
@@ -39,7 +39,7 @@
         "key": "API key detectada en Keychain",
         "location": {
           "startingColumn": 44,
-          "startingLine": 55
+          "startingLine": 61
         }
       },
       {
@@ -47,7 +47,7 @@
         "key": "No hay API key guardada",
         "location": {
           "startingColumn": 78,
-          "startingLine": 55
+          "startingLine": 61
         }
       },
       {
@@ -55,7 +55,7 @@
         "key": "Mostrar",
         "location": {
           "startingColumn": 28,
-          "startingLine": 71
+          "startingLine": 77
         }
       },
       {
@@ -63,7 +63,7 @@
         "key": "sk-...",
         "location": {
           "startingColumn": 39,
-          "startingLine": 62
+          "startingLine": 68
         }
       },
       {
@@ -71,7 +71,7 @@
         "key": "sk-...",
         "location": {
           "startingColumn": 41,
-          "startingLine": 66
+          "startingLine": 72
         }
       },
       {
@@ -79,7 +79,7 @@
         "key": "Guardando...",
         "location": {
           "startingColumn": 39,
-          "startingLine": 77
+          "startingLine": 83
         }
       },
       {
@@ -87,7 +87,7 @@
         "key": "Guardar API key",
         "location": {
           "startingColumn": 56,
-          "startingLine": 77
+          "startingLine": 83
         }
       },
       {
@@ -95,7 +95,7 @@
         "key": "Pegar desde portapapeles",
         "location": {
           "startingColumn": 28,
-          "startingLine": 82
+          "startingLine": 88
         }
       },
       {
@@ -103,7 +103,7 @@
         "key": "Limpiar",
         "location": {
           "startingColumn": 32,
-          "startingLine": 88
+          "startingLine": 94
         }
       },
       {
@@ -111,7 +111,7 @@
         "key": "gpt-4o-mini",
         "location": {
           "startingColumn": 31,
-          "startingLine": 102
+          "startingLine": 108
         }
       },
       {
@@ -119,7 +119,7 @@
         "key": "Este será el tono usado por defecto cuando corrijas con el shortcut global o con la opción general de la menubar.",
         "location": {
           "startingColumn": 22,
-          "startingLine": 134
+          "startingLine": 140
         }
       },
       {
@@ -127,7 +127,7 @@
         "key": "Tono predeterminado",
         "location": {
           "startingColumn": 32,
-          "startingLine": 124
+          "startingLine": 130
         }
       },
       {
@@ -135,7 +135,7 @@
         "key": "Temperature",
         "location": {
           "startingColumn": 32,
-          "startingLine": 137
+          "startingLine": 143
         }
       },
       {
@@ -143,7 +143,7 @@
         "key": "Max input chars",
         "location": {
           "startingColumn": 32,
-          "startingLine": 147
+          "startingLine": 153
         }
       },
       {
@@ -151,7 +151,7 @@
         "key": "Max output tokens",
         "location": {
           "startingColumn": 32,
-          "startingLine": 155
+          "startingLine": 161
         }
       },
       {
@@ -159,7 +159,7 @@
         "key": "Tono predeterminado actual",
         "location": {
           "startingColumn": 30,
-          "startingLine": 117
+          "startingLine": 123
         }
       },
       {
@@ -167,7 +167,7 @@
         "key": "Tono predeterminado",
         "location": {
           "startingColumn": 28,
-          "startingLine": 125
+          "startingLine": 131
         }
       },
       {
@@ -175,7 +175,7 @@
         "key": "%lld",
         "location": {
           "startingColumn": 30,
-          "startingLine": 149
+          "startingLine": 155
         }
       },
       {
@@ -183,7 +183,7 @@
         "key": "%lld",
         "location": {
           "startingColumn": 30,
-          "startingLine": 157
+          "startingLine": 163
         }
       },
       {
@@ -191,7 +191,7 @@
         "key": "Shortcut corregir",
         "location": {
           "startingColumn": 32,
-          "startingLine": 169
+          "startingLine": 175
         }
       },
       {
@@ -199,7 +199,7 @@
         "key": "Shortcut traducir a inglés",
         "location": {
           "startingColumn": 32,
-          "startingLine": 177
+          "startingLine": 183
         }
       },
       {
@@ -207,7 +207,7 @@
         "key": "Mostrar notificaciones",
         "location": {
           "startingColumn": 24,
-          "startingLine": 185
+          "startingLine": 191
         }
       },
       {
@@ -215,7 +215,7 @@
         "key": "Reemplazar automáticamente cuando sea posible",
         "location": {
           "startingColumn": 24,
-          "startingLine": 186
+          "startingLine": 192
         }
       },
       {
@@ -223,7 +223,7 @@
         "key": "Restaurar portapapeles tras reemplazo directo",
         "location": {
           "startingColumn": 24,
-          "startingLine": 187
+          "startingLine": 193
         }
       },
       {
@@ -231,7 +231,103 @@
         "key": "Logs técnicos opcionales",
         "location": {
           "startingColumn": 24,
-          "startingLine": 188
+          "startingLine": 194
+        }
+      },
+      {
+        "comment": "",
+        "key": "Crea tonos propios indicando un nombre y las instrucciones que se enviarán al modelo. El texto de instrucciones reemplaza la descripción del tono en el prompt.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 204
+        }
+      },
+      {
+        "comment": "",
+        "key": "Todavía no hay tonos personalizados.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 209
+        }
+      },
+      {
+        "comment": "",
+        "key": "+ Añadir tono personalizado",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 246
+        }
+      },
+      {
+        "comment": "",
+        "key": "Eliminar tono",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 232
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nuevo tono",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 259
+        }
+      },
+      {
+        "comment": "",
+        "key": "Las instrucciones se envían directamente al modelo como guía de estilo.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nombre",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 262
+        }
+      },
+      {
+        "comment": "",
+        "key": "Instrucciones",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 268
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ej: Argentino casual",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ej: Corrige usando un estilo conversacional informal rioplatense",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 270
+        }
+      },
+      {
+        "comment": "",
+        "key": "Guardar",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 284
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancelar",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 290
         }
       },
       {
@@ -239,7 +335,7 @@
         "key": "Pedir Accessibility",
         "location": {
           "startingColumn": 28,
-          "startingLine": 210
+          "startingLine": 345
         }
       },
       {
@@ -247,7 +343,7 @@
         "key": "Abrir ajustes de Accessibility",
         "location": {
           "startingColumn": 28,
-          "startingLine": 214
+          "startingLine": 349
         }
       },
       {
@@ -255,7 +351,7 @@
         "key": "Abrir ajustes de notificaciones",
         "location": {
           "startingColumn": 28,
-          "startingLine": 217
+          "startingLine": 352
         }
       },
       {
@@ -263,7 +359,7 @@
         "key": "Usa esta acción para comprobar rápidamente que OpenAI responde con tu configuración actual.",
         "location": {
           "startingColumn": 22,
-          "startingLine": 228
+          "startingLine": 363
         }
       },
       {
@@ -271,7 +367,7 @@
         "key": "Probar corrección",
         "location": {
           "startingColumn": 24,
-          "startingLine": 230
+          "startingLine": 365
         }
       },
       {
@@ -279,7 +375,7 @@
         "key": "Este panel muestra el último intento de capturar texto para ayudarte a identificar si falló Accessibility o el fallback por portapapeles.",
         "location": {
           "startingColumn": 22,
-          "startingLine": 245
+          "startingLine": 380
         }
       },
       {
@@ -287,7 +383,7 @@
         "key": "Todavía no hay intentos registrados. Ejecuta una corrección con el atajo global para ver el diagnóstico aquí.",
         "location": {
           "startingColumn": 26,
-          "startingLine": 256
+          "startingLine": 391
         }
       },
       {
@@ -295,7 +391,7 @@
         "key": "Este bloque ayuda a detectar si macOS dio permiso a otra copia del .app o si hace falta relanzar la app después de aprobar Accessibility.",
         "location": {
           "startingColumn": 22,
-          "startingLine": 266
+          "startingLine": 401
         }
       },
       {
@@ -303,7 +399,7 @@
         "key": "Aún no hay diagnóstico cargado.",
         "location": {
           "startingColumn": 26,
-          "startingLine": 295
+          "startingLine": 430
         }
       },
       {
@@ -311,7 +407,7 @@
         "key": "Copiar diagnóstico",
         "location": {
           "startingColumn": 32,
-          "startingLine": 278
+          "startingLine": 413
         }
       },
       {
@@ -319,7 +415,7 @@
         "key": "Refrescar diagnóstico",
         "location": {
           "startingColumn": 32,
-          "startingLine": 290
+          "startingLine": 425
         }
       }
     ]

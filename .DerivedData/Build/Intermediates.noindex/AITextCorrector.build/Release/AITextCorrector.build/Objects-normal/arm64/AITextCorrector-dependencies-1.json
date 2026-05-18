@@ -186,448 +186,448 @@
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Accessibility-ACJINR6C7NZIGPGR88XI6WG50.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Accessibility-1DOIGVAIQ8FRB3TLWIH2L8KW9.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Accessibility"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/AppKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/AppKit-EU5PL4WNNB8CCH07RSLMHX35W.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/AppKit-8UECXOAMXENEASSJ5V1SZJCD9.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "AppKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ApplicationServices.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ApplicationServices-CJW7TI9UNVLMCMAW3X5D39Y4Q.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ApplicationServices-D7K4IQA3EAPGDGQ871O1GQ76H.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ApplicationServices"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CFNetwork.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CFNetwork-6XSSGIVWXI08RQGO7TCDG8LF4.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CFNetwork-YHQLXXU8PBXSKD4WPS8GZNY1.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CFNetwork"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/cups.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CUPS-5DLORU61YPCCCU69J2QWDPFTI.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CUPS-DK1OLO1TK9VDYACU5L4ID7HW8.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CUPS"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Carbon.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Carbon-136YYHRZ0RLMZX8QCL74ZK3ZV.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Carbon-EAU4B8LG53NP25J87I3EEZKTZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Carbon"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ColorSync.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ColorSync-ETRXEU0KQA55SHVG79HJYHHAV.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ColorSync-EKGEEJBROCY3GWW6DK1Z41SJL.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ColorSync"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreData-9C2L3B5S2Q16M0GBP0MIY2VMX.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreData-8OCMPWLSWFPYKY85SCFAXZXPT.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreData"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreFoundation-LBBVWFE8YH3UYWVRRJXTPO2P.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreFoundation-ATOTMJR6ZCA5MYGPPAUZWR49J.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreFoundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreGraphics-7A21V09QLGWDS10TVOHXOS0P3.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreGraphics-D2ZPBT60VOD71MZYHLIJNTO65.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreGraphics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreImage.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreImage-1JSKQ69CLOSEO0JI1JOFNR9LR.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreImage-BQQT2MILCNJMMENBWW6NANB1E.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreImage"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreServices.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreServices-R3VLRQEZBWU1SLBLZ2S7DR70.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreServices-93FJOZ4C76O9595JSA50M256.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreServices"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreText-1FDAXNBWA70JHJKKQRZ9BUJNN.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreText-ASOCHZWMW21LBLCK2BO0RFC2U.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreText"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreTransferable-8E17Y609TSV3XN26EC07C8RYQ.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreTransferable-81WGBXL6U5VXKWHO9C311YU7K.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreTransferable"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreVideo-ECPLSQ3DE8NUWFTNPQL7J6S9D.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/CoreVideo-3HBA6W22GWUHJSVAMWMZ5Q49B.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreVideo"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/Darwin.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Darwin-89YVZBFGH9JHH3PGON1I5FZIK.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Darwin-EFHCSGOARH07M32F3I32ZFXT3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Darwin"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/DataDetection-23Z7CTVG4SCJ26X7A8HQNLQSK.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/DataDetection-DIACBLAYLA9S8MS77KF31DSU5.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DataDetection"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/DeveloperToolsSupport-4RK4DOE94AVLKZFLXX69WGOS.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/DeveloperToolsSupport-B7VCF01KM3Y8WGMB5C6KNFF2K.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DeveloperToolsSupport"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/DiskArbitration.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/DiskArbitration-C6482T70INYJC2GO5BSBZRA5M.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/DiskArbitration-678LYUPSFY807QGII8B8JVXQ1.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DiskArbitration"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/dispatch.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Dispatch-2BI02Q3KG7P400MLT5HY8UTQO.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Dispatch-FPQBVG6Z58X9FWLJ5N158JRL.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Dispatch"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Foundation-3IA2JK54CVN002TI83X2QILH7.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Foundation-AOJD92KOK1PRMB50XZZ2D4WOY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Foundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/IOKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/IOKit-EPOYJ36FGWJ8UVB3TOT9GR15V.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/IOKit-AX83Y67ARP83D98RZ7A23TYAV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "IOKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/IOSurface.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/IOSurface-7POSDGZJRNKLZ1BDUM9NK16AH.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/IOSurface-539SCS4R6XOA9N5CUMZ6ENEWV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "IOSurface"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ImageIO.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ImageIO-5F5QDL3EDXMIDMSHBJ3J4XE4W.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ImageIO-98CA4Q1AUP63HY14VVJ213ZP4.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ImageIO"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinBasic.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/MachO-63LEOZEJA0PV47L7GH29DQ7N5.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/MachO-11S873XWXSR2SAF8CF49E2YVZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "MachO"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Metal.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Metal-ABKLVGI95EKPAJEYJ28CJQPDK.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Metal-9S97W5IUGSHUVOZUZH3V2FYYN.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Metal"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/OSLog-5J8PXK3BM4MP07A7PHVRLR5RK.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/OSLog-BIEPRQZF89DSD77RS8SVC6NOK.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OSLog"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/ObjectiveC.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ObjectiveC-7J2WUGDI9OT1K1WG746T1RHH.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ObjectiveC-5ENVD4VOG7WNG86G3Q7B5M8LN.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ObjectiveC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/OpenGL.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/OpenGL-CAO8HPSBE45ODEKDXN1WCKPNS.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/OpenGL-DG8QR3LPTREH9W9BF16FH7HOP.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OpenGL"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/QuartzCore-B368BUP0VGSN28WP49CQA4NZG.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/QuartzCore-975BC645M5PPCCJ6ZBTZUHTJC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "QuartzCore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Security-DFZEU221CITJ60E90B8OHJNL2.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Security-9B06UKUVSF9IUDZAX07KBVGB7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Security"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/Spatial\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Spatial-NY0ZW8I8TZZK0GV8CG70TRHM.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Spatial-CR76BCFHA1AN12HYJSPAIKKLD.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Spatial"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/SwiftShims-E3XCXZIOVVVC649M9YYZ7MQY7.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/SwiftShims-BX90N37H9ZYULH5E20X8C4KR7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/SwiftUI-ANWFLS7RTV9P3Q5YDI1Q0K0PO.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/SwiftUI-BXSTLR650EFD8NC978KX1FHP6.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUI"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/SwiftUICore-E6GYJED8GGTVVHYK3D136VLN6.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/SwiftUICore-AQMUE4D4RU4UUQKERJER1YSTV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUICore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Symbols-3VN5U6F96GQM08TA4QDN3K21B.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/Symbols-BR0CFBW29HCARIMZM62AW1N7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Symbols"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/UniformTypeIdentifiers-26L29YZ1LSAV1T4ZG8DGSW4UY.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/UniformTypeIdentifiers-BUBH5D6UV6AZJT5287D8FC7VG.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UniformTypeIdentifiers"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/UserNotifications.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/UserNotifications-5FT8GPJAYP9DAC4DIVGKUSFXF.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/UserNotifications-8Q5MP5I3BIG23AQB1DNT6RT75.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UserNotifications"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/xpc.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/XPC-8TS9DN6SR2TAAA6FIF4XWSN3U.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/XPC-6H3IG6179NQE31MIW4C07LCK2.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "XPC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_AvailabilityInternal-BHP0TT61DPPQX0FVWGDODYRA7.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_AvailabilityInternal-DS13Y3SEM8P8FA61A5XQMO024.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_AvailabilityInternal"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_float-41M5NHALX2UB0TOPFVV9808XI.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_float-BGWLUVZ1IOGLVBTOS4R6NILVE.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_float"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_intrinsics-89DXOUDAR25M955AIRBDOZ8ZB.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_intrinsics-ERW57BH96Q95XMHXGUINTK19H.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_intrinsics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_inttypes-5076LWW0IUXPEW85170UGVB2W.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_inttypes-FOEIC9QYM0IH3CFUK3QZCX67.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_inttypes"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_limits-4LAHBWTE4XK24GXBF7Q0XUZKF.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_limits-58358X2J02014CTOIHL3RFHDJ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_limits"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stdarg-2LZJIQUJO6KTAOX8L0LYDFFB.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stdarg-ABOMOH4SDLJ6UBJS9654HCXJQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdarg"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stdatomic-F4I8LA3MQBDVJMKOUHLTNN4TO.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stdatomic-3T5ROHYVJ8PCT5U8NI6XPQ764.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdatomic"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stdbool-8ZAYS2BEHB0L3ZH6F6ZQEUC3Y.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stdbool-6P4T7ZUAMATSWU5RI3ZL50V23.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdbool"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stddef-EPZWA7791AL4FEMBIYEP66INA.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stddef-46OTAPDQ1KKDCAO2RMS4BS93Y.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stddef"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stdint-5AOKWQVGY92ASP9H6YWE4Y7IR.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_stdint-9S4PPHIUAAVL455VBIKIN7LC6.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdint"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_tgmath-5O0TD22ORINJRWQ3Y9JS9ZNWZ.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_Builtin_tgmath-7W9WKFMSISMWPNYAM2WRA7CDC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_tgmath"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_DarwinFoundation1-5EEJBM0C5ZSEUWYPFVEYYWHYZ.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_DarwinFoundation1-65R3KD5TKIREFECAC5O483PSJ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation1"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_DarwinFoundation2-4BC0HT3O8UGK5MLLLXEW6UV2I.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_DarwinFoundation2-3QT5RHI6D75N55WXAXX38K72Z.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation2"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation3.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_DarwinFoundation3-2IZDRWF85CFKJAKPK75ADO6UR.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_DarwinFoundation3-BA1MO1ZWI1LDX24VT3EKP1W4G.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation3"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_SwiftConcurrencyShims-E4Y3DVVB00GW90DVLNRALIZNV.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/_SwiftConcurrencyShims-6AVN38Y5D5QM1RVDIR3PFQWQB.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_SwiftConcurrencyShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/launch.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/launch-4A3E8MKWM6U4D7V1T7MA8B3AJ.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/launch-6GM744IVD7OQ7NNLKS6I8LQ2P.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "launch"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/libDER\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/libDER-48IKUSLOYB5QZ42ZBC060A7LK.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/libDER-BJKVK94NDB064CVAM3CRDZSZ8.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "libDER"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/libkern.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/libkern-7XTFWK19SG7JHTTTR27FQEN5.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/libkern-9TPBK7D5PQC6S6IQKK9XEDLQ3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "libkern"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/os-94CBQ65OTZ445XEQ68X6HT51J.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/os-57VDTSZOPN1DMDAKG7MWIXUUH.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/os_object-7IX62V15A0V2V94SYQKZF106F.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/os_object-DUGF9APD8A64ZQ5OQVP24M3H6.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_object"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/os_workgroup-ALP9S4RW3RSA4DC1JQGPXD5HI.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/os_workgroup-AWMH4JCISRZ0QNC8VZE7DIVSI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_workgroup"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ptrauth-4QTCSP6XMC05Y1BMFPCF1LCWK.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ptrauth-8BQ4KJ1YYC7ZXU2YLJDJ6Q3H3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrauth"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ptrcheck-41LDYU3XINDRAZJWBUXA7V736.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/ptrcheck-64MQAMAEQK6DUPD7U34CBYTVS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrcheck"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/simd\/module.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/simd-6NYCBOVT2PVD1SMWP4HQDPW0N.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/simd-2M8AAEXI7Q4ZZ9MV8NEGDA9A4.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "simd"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/sys_types-259SWM4KD5HHIYBHGPPQAUSE4.pcm",
+    "clangModulePath" : "\/Users\/gonzalopastorp\/Dev\/NuevoCorrector\/.DerivedData\/ModuleCache.noindex\/sys_types-880FMA655ZYGOVPMWE6T7AA2J.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "sys_types"

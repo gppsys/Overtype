@@ -4,42 +4,130 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "Corregir texto",
+        "key": "Acción",
         "location": {
-          "startingColumn": 26,
-          "startingLine": 15
+          "startingColumn": 16,
+          "startingLine": 108
         }
       },
       {
         "comment": "",
         "key": "Predeterminado: %@",
         "location": {
-          "startingColumn": 26,
-          "startingLine": 17
-        }
-      },
-      {
-        "comment": "",
-        "key": "Usar tono predeterminado",
-        "location": {
-          "startingColumn": 26,
-          "startingLine": 45
-        }
-      },
-      {
-        "comment": "",
-        "key": "Dejar este tono como predeterminado",
-        "location": {
-          "startingColumn": 35,
+          "startingColumn": 22,
           "startingLine": 91
         }
       },
       {
         "comment": "",
-        "key": "Tono predeterminado actual",
+        "key": "OverType · Texto directo",
         "location": {
-          "startingColumn": 50,
-          "startingLine": 68
+          "startingColumn": 45,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "OverType · Corregir selección",
+        "location": {
+          "startingColumn": 75,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Corregir",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Traducir al inglés",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 110
+        }
+      },
+      {
+        "comment": "",
+        "key": "Escribe o pega el texto aquí…",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 143
+        }
+      },
+      {
+        "comment": "",
+        "key": "Resultado",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 169
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copiar",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 177
+        }
+      },
+      {
+        "comment": "",
+        "key": "Procesando…",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 210
+        }
+      },
+      {
+        "comment": "",
+        "key": "Usar tono predeterminado · %@",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "Traducir · %@",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 215
+        }
+      },
+      {
+        "comment": "",
+        "key": "Usar tono predeterminado · %@",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 230
+        }
+      },
+      {
+        "comment": "",
+        "key": "Traducir · %@",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 231
+        }
+      },
+      {
+        "comment": "",
+        "key": "Establecer como tono predeterminado",
+        "location": {
+          "startingColumn": 19,
+          "startingLine": 302
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tono predeterminado",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 276
         }
       }
     ]

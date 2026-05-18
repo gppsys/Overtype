@@ -64,6 +64,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(showSettingsWindow), name: .openSettingsWindow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showOnboardingWindow), name: .openOnboardingWindow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showTonePalette), name: .openTonePalette, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showDirectInput), name: .openDirectInput, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleShortcutRecordingDidBegin), name: .shortcutRecordingDidBegin, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleShortcutRecordingDidEnd), name: .shortcutRecordingDidEnd, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleAppDidBecomeActive), name: NSApplication.didBecomeActiveNotification, object: nil)
@@ -118,10 +119,19 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.activate(ignoringOtherApps: true)
     }
 
+    @objc func showDirectInput() {
+        tonePaletteController?.presentForDirectInput()
+    }
+
     @objc func showTonePalette() {
         Task { @MainActor in
+            // Try to capture whatever is selected right now.
+            // If nothing is selected (or the capture fails), fall back to direct-input mode
+            // so the palette always opens regardless of context.
             if let selection = await appState.correctionCoordinator.captureSelectionForPalette() {
                 tonePaletteController?.present(with: selection)
+            } else {
+                tonePaletteController?.presentForDirectInput()
             }
         }
     }

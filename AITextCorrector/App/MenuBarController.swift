@@ -158,9 +158,11 @@ final class MenuBarController: NSObject {
         correctDefault.target = self
         menu.addItem(correctDefault)
 
+        let allTones = ToneOption.allTones(from: appState.settingsStore.settings)
+
         let tonesItem = NSMenuItem(title: "Corregir con tono", action: nil, keyEquivalent: "")
         let tonesMenu = NSMenu()
-        for tone in ToneOption.presets {
+        for tone in allTones {
             let toneItem = NSMenuItem(title: tone.title, action: #selector(correctWithTone(_:)), keyEquivalent: "")
             toneItem.target = self
             toneItem.representedObject = tone.id
@@ -171,7 +173,7 @@ final class MenuBarController: NSObject {
 
         let defaultToneSelectorItem = NSMenuItem(title: "Cambiar tono predeterminado", action: nil, keyEquivalent: "")
         let defaultToneMenu = NSMenu()
-        for tone in ToneOption.presets {
+        for tone in allTones {
             let toneItem = NSMenuItem(title: tone.title, action: #selector(setDefaultTone(_:)), keyEquivalent: "")
             toneItem.target = self
             toneItem.representedObject = tone.id
@@ -184,6 +186,10 @@ final class MenuBarController: NSObject {
         let paletteItem = NSMenuItem(title: "Abrir paleta de tonos", action: #selector(openTonePalette), keyEquivalent: "")
         paletteItem.target = self
         menu.addItem(paletteItem)
+
+        let directInputItem = NSMenuItem(title: "Texto directo…", action: #selector(openDirectInput), keyEquivalent: "")
+        directInputItem.target = self
+        menu.addItem(directInputItem)
         menu.addItem(.separator())
 
         let settingsItem = NSMenuItem(title: "Configuracion...", action: #selector(openSettings), keyEquivalent: ",")
@@ -231,6 +237,10 @@ final class MenuBarController: NSObject {
         NotificationCenter.default.post(name: .openTonePalette, object: nil)
     }
 
+    @objc private func openDirectInput() {
+        NotificationCenter.default.post(name: .openDirectInput, object: nil)
+    }
+
     @objc private func quit() {
         NSApp.terminate(nil)
     }
@@ -242,10 +252,11 @@ final class MenuBarController: NSObject {
 }
 
 extension Notification.Name {
-    static let openSettingsWindow  = Notification.Name("AITextCorrector.openSettingsWindow")
+    static let openSettingsWindow   = Notification.Name("AITextCorrector.openSettingsWindow")
     static let openOnboardingWindow = Notification.Name("AITextCorrector.openOnboardingWindow")
-    static let openTonePalette     = Notification.Name("AITextCorrector.openTonePalette")
-    static let refreshUIState      = Notification.Name("AITextCorrector.refreshUIState")
+    static let openTonePalette      = Notification.Name("AITextCorrector.openTonePalette")
+    static let openDirectInput      = Notification.Name("AITextCorrector.openDirectInput")
+    static let refreshUIState       = Notification.Name("AITextCorrector.refreshUIState")
     static let shortcutRecordingDidBegin = Notification.Name("AITextCorrector.shortcutRecordingDidBegin")
-    static let shortcutRecordingDidEnd = Notification.Name("AITextCorrector.shortcutRecordingDidEnd")
+    static let shortcutRecordingDidEnd   = Notification.Name("AITextCorrector.shortcutRecordingDidEnd")
 }
